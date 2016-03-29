@@ -182,14 +182,24 @@
     padding-bottom: 40px;
   }
 
-  .body-text {
+  .text {
+    mso-line-height-rule: exactly;
+    padding-top: 25px;
+    -webkit-text-size-adjust: none;
+  }
+
+  .full-width-text {
     font-size: 16px;
     font-weight: normal;
     line-height: 25px;
     text-align: left;
-    mso-line-height-rule: exactly;
-    padding-top: 25px;
-    -webkit-text-size-adjust: none;
+  }
+
+  .section-header {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 25px;
+    text-align: left;
   }
 
   .button {
@@ -327,8 +337,20 @@
             <td align="center" valign="top">
               <table border="0" cellpadding="0" cellspacing="0" width="100%">
                 <tr>
-                  <td align="center" valign="top" class="body-text full-width-text" mc:edit="body-full-width-text" mc:label="Body: Full-width text">
-                    <strong>Full-width text</strong> | Arial / type 16px / leading 25px | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam est mi, dapibus eu enim a, consectetur auctor odio. In varius volutpat sapien non blandit. Maecenas eget magna ut nunc dapibus efficitur a quis lacus.
+                  <td align="center" valign="top" class="text full-width-text" mc:edit="body-full-width-text" mc:label="Full-width text">
+                    <strong>Full-width text</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam est mi, dapibus eu enim a, consectetur auctor odio. In varius volutpat sapien non blandit. Maecenas eget magna ut nunc dapibus efficitur a quis lacus.
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <tr mc:repeatable="content" mc:variant="section-header">
+            <td align="center" valign="top">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td align="center" valign="top" class="text section-header" mc:edit="body-full-width-text" mc:label="Section header">
+                    Section header
                   </td>
                 </tr>
               </table>
