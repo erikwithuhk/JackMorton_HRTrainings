@@ -182,9 +182,12 @@
     padding-bottom: 40px;
   }
 
+  .padding-top-25 {
+    padding-top: 25px;
+  }
+
   .text {
     mso-line-height-rule: exactly;
-    padding-top: 25px;
     -webkit-text-size-adjust: none;
   }
 
@@ -200,6 +203,38 @@
     font-weight: bold;
     line-height: 25px;
     text-align: left;
+  }
+
+  .section-description {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 25px;
+    text-align: left;
+  }
+
+  .course {
+    padding-top: 20px;
+  }
+
+  .course-background {
+    background-color: #ffe0d0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .course-title {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 25px;
+    text-align: left;
+  }
+
+  .course-image {
+    border: none;
+    width: 160px;
+    height: 160px;
   }
 
   .button {
@@ -337,8 +372,8 @@
             <td align="center" valign="top">
               <table border="0" cellpadding="0" cellspacing="0" width="100%">
                 <tr>
-                  <td align="center" valign="top" class="text full-width-text" mc:edit="full-width-text" mc:label="Full-width text">
-                    <strong>Full-width text</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam est mi, dapibus eu enim a, consectetur auctor odio. In varius volutpat sapien non blandit. Maecenas eget magna ut nunc dapibus efficitur a quis lacus.
+                  <td align="center" valign="top" class="text padding-top-25 full-width-text" mc:edit="full-width-text" mc:label="Full-width text">
+                    Full-width text | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam est mi, dapibus eu enim a, consectetur auctor odio. In varius volutpat sapien non blandit. Maecenas eget magna ut nunc dapibus efficitur a quis lacus.
                   </td>
                 </tr>
               </table>
@@ -349,7 +384,7 @@
             <td align="center" valign="top">
               <table border="0" cellpadding="0" cellspacing="0" width="100%">
                 <tr>
-                  <td align="center" valign="top" class="text section-header" mc:edit="section-header" mc:label="Section header">
+                  <td align="center" valign="top" class="text padding-top-25 section-header" mc:edit="section-header" mc:label="Section header">
                     Section header
                   </td>
                 </tr>
@@ -362,26 +397,45 @@
               <table border="0" cellpadding="0" cellspacing="0" width="100%">
                 <tr>
                   <td align="center" valign="top" class="text section-description" mc:edit="section-description" mc:label="Section description">
-                    Section header
+                    Section description text | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   </td>
                 </tr>
               </table>
             </td>
           </tr>
 
-          <tr mc:repeatable="content" mc:variant="full-width-image" mc:label="image">
-            <td align="center" valign="top" style="padding-top:50px;">
+          <tr mc:repeatable="content" mc:variant="course-with-image">
+            <td align="center" valign="top" class="course">
               <table border="0" cellpadding="0" cellspacing="0" width="100%">
                 <tr>
-                  <td align="left" valign="top" style="font-size:36px; font-weight:bold; text-align:left;" mc:edit="img">
-                    <img src="https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/eaab01e6-ea8b-45d7-9b72-84b5193dc741.png" alt="Case study: Reebok Athlete Challenge" style="height:141px; width:600px;" height="141" width="600">
+                  <td align="center" valign="top" class="course-background">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                      <tr>
+                        <td align="left" valign="top" class="text course-title" mc:edit="course-title-with-image" mc:label="Course title">
+                          Course title
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="left" valign="top">
+                          <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                              <td align="left" valign="top" class="text course-image" mc:edit="course-image" mc:label="Course image">
+                                <img src="#" alt="" border="0" height="160" width="160" >
+                              </td>
+                              <td align="left" valign="top" class="text course-image-description" mc:edit="course-image-description" mc:label="Course description with image">
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
                   </td>
                 </tr>
               </table>
             </td>
           </tr>
 
-          <tr>
+          <!-- tr>
             <td align="center" valign="top" id="body">
               <table border="0" cellpadding="0" cellspacing="0" width="100%">
                 <tr>
@@ -414,7 +468,7 @@
                 </tr>
               </table>
             </td>
-          </tr>
+          </tr-->
 
           <tr>
             <td align="right" valign="top" id="social_icons">
