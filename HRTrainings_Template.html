@@ -57,10 +57,10 @@
 
   =======================*/
 
-   /* Outlook Outlook.com / Hotmail
-   .ExternalClass Class Override */
+  /* Outlook Outlook.com / Hotmail
+  .ExternalClass Class Override */
 
-   .ExternalClass{
+  .ExternalClass{
     width:100%;
   }
 
@@ -95,12 +95,12 @@
     -ms-interpolation-mode:bicubic;
   }
 
-    /* OSX / iOS
-    WebKit Text Size Adjustment */
+  /* OSX / iOS
+  WebKit Text Size Adjustment */
 
-    body{
-      -webkit-text-size-adjust:100%;
-    }
+  body{
+    -webkit-text-size-adjust:100%;
+  }
 
   /* Windows Mobile
   Windows Mobile Text Size Adjustment */
@@ -205,7 +205,7 @@
     text-align: left;
   }
 
-   .section-description {
+  .section-description {
     padding-top: 5px;
   }
 
@@ -234,11 +234,14 @@
     height: 160px;
   }
 
-  .course-image-description {
+  .course-image-description, .course-noimage-description {
     font-size: 12px;
     font-weight: normal;
     line-height: 20px;
     text-align: left;
+  }
+
+  .course-image-description {
     width: 440px;
     padding-left: 15px;
   }
@@ -300,10 +303,10 @@
   }
 
   #unsubscribe a {
-   color: #abafb3;
-   font-weight: bold;
-   text-decoration: underline;
- }
+    color: #abafb3;
+    font-weight: bold;
+    text-decoration: underline;
+  }
 
 
   /*=======================
@@ -460,6 +463,44 @@
                 <tr>
                   <td align="center" valign="top" class="text divider" mc:label="Divider">
                     &nbsp;
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <tr mc:repeatable="content" mc:variant="course-noimage">
+            <td align="center" valign="top" class="course">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td align="center" valign="top" class="course-background">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                      <tr>
+                        <td align="center" valign="top" style="width: 400px;">
+                          <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                              <td align="left" valign="top" class="text course-title" mc:edit="course-title-without-image" mc:label="Course title">
+                                Course title
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left" valign="top" class="text course-noimage-description" mc:edit="course-noimage-description" mc:label="Course description without image">
+                                Course description | Arial / type 12px / leading 20px
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td align="center" valign="top" class="button">
+                          <table align="right" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                              <td align="center" valign="middle" class="button-text" mc:edit="button-text" mc:label="Button text">
+                                <a href="#" target="_blank">Call to action</a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
                   </td>
                 </tr>
               </table>
