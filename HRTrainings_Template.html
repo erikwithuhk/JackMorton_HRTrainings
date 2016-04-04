@@ -191,7 +191,7 @@
     -webkit-text-size-adjust: none;
   }
 
-  .full-width-text {
+  .full-width-text, .section-description, .divider {
     font-size: 16px;
     font-weight: normal;
     line-height: 25px;
@@ -205,11 +205,7 @@
     text-align: left;
   }
 
-  .section-description {
-    font-size: 16px;
-    font-weight: normal;
-    line-height: 25px;
-    text-align: left;
+   .section-description {
     padding-top: 5px;
   }
 
@@ -268,6 +264,12 @@
     color: #ffffff;
     font-weight: normal;
     text-decoration: none;
+  }
+
+  .divider {
+    border-bottom-color: #d2d4d7;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
   }
 
   #social_icons {
@@ -446,6 +448,18 @@
                         </td>
                       </tr>
                     </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <tr mc:repeatable="content" mc:variant="divider">
+            <td align="center" valign="top" style="padding-left: 100px; padding-right: 100px;">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td align="center" valign="top" class="text divider" mc:label="Divider">
+                    &nbsp;
                   </td>
                 </tr>
               </table>
